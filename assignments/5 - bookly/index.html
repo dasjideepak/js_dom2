@@ -3,29 +3,26 @@
   <head>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" />
-    <title>Bookly App</title>
+	<title>Bookly App</title>
   </head>
-  <body>
+  <body onload="createUI(allBooks)">
   	<div id="wrapper">
 	    <header>
 	    	<div id="page-banner">
 	    		<h1 class="title">Bookly</h1>
           <p>Best Books For Hackers</p>
-          <form id="search-books">
-            <input type="text" placeholder="Search books..." />
-          </form>
+            <input class="search" type="text" placeholder="Search books..." />
 	    	</div>
 	    </header>
 	    <div id="book-list">
 	    	<h2 class="title">Books to Read</h2>
-	    	<ul>
-	    	</ul>
+	    	<ul></ul>
 	    </div>
 	    <form id="add-book">
         <input type="checkbox" id="hide" />
         <label for="hide">Hide all books</label>
-	    	<input type="text" placeholder="Add a book..." />
-	    	<button>Add</button>
+	    	<input class="add-book" type="text" placeholder="Add a book..." />
+	    	<button type = "submit">Add</button>
 	    </form>
 		</div>
     <script src="app.js"></script>		

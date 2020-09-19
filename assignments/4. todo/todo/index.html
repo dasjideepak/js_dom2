@@ -6,9 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="./style.css"></script>
     <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script src="./main.js"></script>
-  </body>
+	<body>
+		<div class="container">
+			<h1>todos</h1>
+			<div class="header">
+				<div class="flex">
+					<div class="toggle_img_container">
+						<img class="toggle_all" src="down.png" alt="" />
+					</div>
+					<input
+						type="text"
+						class="first_todo"
+						placeholder="What needs to be done?"
+					/>
+				</div>
+
+				<ul></ul>
+				<div class="footer">
+					<div class="footer_strip">
+						<div class="item_count">
+							<span class="counter">0</span>
+							items left
+						</div>
+						<div class="item_status">
+							<button id="all_button" href="">All</button>
+							<button id="active_button" href="">Active</button>
+							<button id="completed_button" href="">
+								Completed
+							</button>
+						</div>
+						<div class="item_completed">
+							Clear Completed
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
 </html>

@@ -1,0 +1,21 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+button {
+    padding: 8px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(224, 123, 6);
+    color: white;
+    outline: none;
+    border: 2px solid black;
+    margin: 20px;
+}
